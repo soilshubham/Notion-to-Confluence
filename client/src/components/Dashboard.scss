@@ -1,0 +1,118 @@
+#dash{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    padding: 5px;
+
+    .header{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .content{
+        margin-top: 2rem;
+        text-align: center;
+
+
+        .title{
+            font-size: 0.9rem;
+            color: #696969;
+        }
+
+        .page-inp{
+            margin-top: 3rem;
+            box-sizing: border-box;
+            width: 100%;
+            border: solid 1px #696969;
+            padding: 0.7rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #767676;
+            transition: all 0.1s ease-in;
+            border-radius: 5px;
+            &:focus{
+                outline: none;
+                border: solid 1px #141414;
+                color: #141414;
+            }
+        }
+        .add-btn{
+            width: 100%;
+            max-width: 450px;
+            border: none;
+            padding: 1rem 1rem;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            background-color: #191919;
+            color: #ffffff;
+            font-weight: 400;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+    }
+
+    .page-container{
+        margin-top: 5rem;
+        max-width: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+
+        .page{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            overflow: hidden;
+            white-space: nowrap;
+
+            border: solid 1px #696969;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+
+            .page-icon{
+                width: 4rem;
+                height: 4rem;
+            }
+
+            .page-content{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .page-title{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+
+                .page-desc{
+                    font-size: 0.9rem;
+                    color: #696969;
+                }
+            }
+        }
+
+        .convert-btn{
+            border: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            background-color: transparent;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.1s ease-in;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
